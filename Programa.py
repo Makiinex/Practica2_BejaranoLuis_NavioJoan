@@ -14,6 +14,20 @@ def inverso(frase):
         resultado = frase[-1] + inverso(frase[:-1])
     return resultado
 
+def consonantes(frase):
+    listavocales = "aeiou"
+    resultado = ""
+    if len(frase) > 0:
+        if frase[0].lower() in listavocales:
+            resultado = frase[0] + consonantes(frase[1:])
+        else:
+            resultado = consonantes(frase[1:])
+    return resultado
+
+def orden(frase):
+    return "".join(sorted(frase, key=str.upper))
+frase = input("Introduce una frase: ")
+print(orden(frase))
 
 menu00 = "\nQuè vols fer?\n1. Elimina les vocals\n2. Elimina les " \
          "consonants\n3. Ordena la frase al revés i printala per pantalla\n4. Ordena les " \
