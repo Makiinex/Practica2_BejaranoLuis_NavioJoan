@@ -26,8 +26,6 @@ def consonantes(frase):
 
 def orden(frase):
     return "".join(sorted(frase, key=str.upper))
-frase = input("Introduce una frase: ")
-print(orden(frase))
 
 menu00 = "\nQuè vols fer?\n1. Elimina les vocals\n2. Elimina les " \
          "consonants\n3. Ordena la frase al revés i printala per pantalla\n4. Ordena les " \
