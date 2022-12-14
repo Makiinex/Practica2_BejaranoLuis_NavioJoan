@@ -14,6 +14,7 @@ def inverso(frase):
         resultado = frase[-1] + inverso(frase[:-1])
     return resultado
 
+
 menu00 = "\nQuè vols fer?\n1. Elimina les vocals\n2. Elimina les " \
          "consonants\n3. Ordena la frase al revés i printala per pantalla\n4. Ordena les " \
          "paraules de la frase en ordre ascendent i printales per pantalla\n5. Sortir"
@@ -43,7 +44,7 @@ while not salir:
                 if opt == 3:
                     print(inverso(frase))
                 if opt == 4:
-                    print(4)
+                    print(orden(frase))
                 if opt == 5:
                     flg00 = False
                     salir = True
