@@ -40,7 +40,7 @@ while not salir:
                 if opt == 1:
                     print(vocales(frase))
                 if opt == 2:
-                    print(2)
+                    print(consonantes(frase))
                 if opt == 3:
                     print(inverso(frase))
                 if opt == 4:
